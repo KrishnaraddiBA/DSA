@@ -46,7 +46,7 @@ public class Abc {
 		for (int i = 0; i < a.length; i++) {
 			a[i]=scan.nextInt();
 		}
-		for (int i = 0; i < b.length; i++) {
+		for (int i = 0; i < a.length; i++) {
 			if (i<index) {
 				b[i]=a[i];
 			}
@@ -54,8 +54,11 @@ public class Abc {
 				continue;
 			}
 			else {
-				b[i]=a[i+1];
+				b[i-1]=a[i];
 			}
+		}
+		for(int i=0;i<b.length;i++){
+			System.out.println(b[i]);
 		}
 	}
 
